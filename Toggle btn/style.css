@@ -76,12 +76,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: cornflowerblue;
-    padding: 20px; /* chhoti screen pe thoda gap rahe */
+    padding: 20px; 
 }
 #card {
-    max-width: 90%;        /* screen ke hisaab se shrink hoga */
-    width: 300px;          /* default desktop */
-    max-height: 95vh;      /* mobile screen ke liye height adjust */
+    max-width: 90%;        
+    width: 300px;          
+    max-height: 95vh;      
     background-color: white;
     border-radius: 30px;
     padding: 20px;
@@ -91,8 +91,8 @@ body {
 }
 #card img {
     width: 100%;
-    height: auto;          /* image ratio maintain karegi */
-    max-height: 60%;       /* chhoti screen pe limit */
+    height: auto;         
+    max-height: 60%;       
     border-radius: 20px;
     object-fit: cover;
     object-position: top;
@@ -114,7 +114,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    flex-wrap: wrap; /* mobile pe buttons neeche chale jayenge */
+    flex-wrap: wrap;  
     gap: 10px;
 }
 .btn button {
@@ -154,9 +154,9 @@ body {
         font-size: 1rem;
     }
     .btn {
-        flex-direction: column; /* buttons stack vertically */
+        flex-direction: column;  
     }
     .btn button {
-        width: 100%; /* full width buttons on mobile */
+        width: 100%;  
     }
 }
