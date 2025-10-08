@@ -1,0 +1,79 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+ 
+ body{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #667eea, #764ba2);
+ }
+ .container{
+    background: #222;
+    padding: 20px;
+     border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+ }
+ .container input{
+    width: 100%;
+    height: 70px;
+    border: none;
+    outline: none;
+    background: #000;
+    color:#fff;
+    font-size: 2rem;
+  text-align: right;
+  border-radius: 10px;
+padding: 10px;
+  margin-bottom: 15px;
+ }
+ .container div{
+    display: flex;
+    justify-content: space-between;
+      margin: 8px 0;
+ }
+ button{
+    flex: 1;
+ height: 60px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: #333;
+  color: #fff;
+}
+button.operator {
+  background: #ff9500;
+  color: #fff;
+}
+
+button.ac {
+  background: #ff3b30;
+}
+
+button.del {
+  background: #ffcc00;
+  color: #000;
+}
+
+button.equabtn {
+  background: #34c759;
+  color: white;
+}
+
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+ 
