@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+button {
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+</style>
+<body>
+    <h1>Change BackGround color in every second</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let intervalId;
+    const randomColor = function(){
+        const hex = "0123456789ABCDEF";
+        let color = "#";
+    for(let i = 0 ;i<6;i++){
+        color += hex[Math.floor(Math.random()*16)];
+    }
+    return color;
+    }
+document.getElementById("start").addEventListener("click",()=>{
+     if (!intervalId){
+    intervalId = setInterval(() => {
+        document.body.style.backgroundColor = randomColor();
+    }, 1000);
+}
+})
+document.getElementById("stop").addEventListener("click",()=>{
+ clearInterval(intervalId);
+ intervalId = null;
+})
+ 
+</script>
+</html>
